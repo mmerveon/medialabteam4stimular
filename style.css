@@ -1,0 +1,301 @@
+/*  Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arapey');
+
+/* ===== Global ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body , html {
+    overflow-x: hidden;
+    font-family: 'Arapey';
+    font-size: 18px;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+header {
+    width: 99vw;
+    height: 70vh; 
+    background-image: url('./img/team1.png');
+    background-position: bottom;
+    background-size: contain;
+    /* display: flex;
+    align-items: flex-end; */
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: #61B32A;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #61B32A;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: #61B32A;
+    border-radius: 30px;
+    color: black;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+} 
+
+/* Onderzoeken */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+    padding: 100px 100px;
+}
+.tekst1 {
+    font-size: x-large;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    color: #61B32A;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row .col img{
+    height: 90%;
+    width: 90%;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.events .row {
+    margin-top: 50px; 
+}
+h4 {
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+}
+p{
+    color: black;
+    padding: 0px 40px;
+}
+.events .ctn {
+    margin-top: 30px;
+}
+.dropdown {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    /* position: absolute; */
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 4px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.afbeelding1{
+    size: 30%;
+}
+
+/* Tarieven */
+.column {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 500px;
+    justify-content: space-between;
+}
+.row .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ECECEC;
+    border-radius: 4px;
+    width: 95%;
+    height: 80%;
+}
+h2 {
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Middenstuk */
+.middenstuk {
+    margin-top: 300px;
+    margin-bottom: 300px;
+    text-align: center;
+}
+
+/* Contact */
+.adres {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: #ededed;
+    text-align: center;
+}
+.footer p{
+    color: black;
+    margin: 20px auto;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-instagram {
+      color: black;
+  }
+  /* Facebook */
+  .fa-facebook {
+    color: black;
+  }
+
+/* Mobile Device */
+@media only screen and (max-width:850px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #61B32A;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+        border-top-left-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+
+    }
+    /* Events */
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 90%;
+    }
+
+    /* Tarieven */
+    .row .column {
+        margin: 30px 60px;
+        padding: 20px 50px;
+    }
+
+    /* Footer */
+    .footer{
+        padding: 10px;
+    }
+
+    /* Animations */
+     .ctn:hover {
+         background: #61B32A;
+         color: black;
+         box-shadow: 2px 2px 5px black;
+     }
+}
